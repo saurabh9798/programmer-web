@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Programmer-web</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            /* font-weight: <weight>;
+  font-style: normal; */
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 80vh;
+        }
+
+        .card-body img {
+            min-width: 50%;
+            max-height: 200px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="home">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white px-4 border-bottom fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-2" href="#">Programmer-<span class="text-primary">web</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#Services">SEO</a></li>
+                                <li><a class="dropdown-item" href="#Services">Web Design</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#Services">Graphics Design</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="domenico-loia-EhTcC9sYXsw-unsplash.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="christina-wocintechchat-com-vLwH8bWoi_8-unsplash.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption  d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <section class="about my-5" id="about">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 data-aos="fade-up" data-aos-offset="200">About <span class="text-primary">me</span></h1>
+                <hr / class="W-25 m-auto">
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 " data-aos="zoom-in" data-aos-offset="200">
+                    <h1>What do you <span class="text-primary"> want to know?</span></h1>
+                    <p class="p-2">
+                        Welcome to Programmer web, your premier destination for top-tier technical services.
+                        Specializing in app development, web development, game development, and more, we leverage
+                        cutting-edge technology to bring your ideas to life. With a commitment to excellence and
+                        innovation, we deliver solutions that exceed expectations and propel your business forward.
+                        Personally, I am passionate about expanding our services globally, ensuring our expertise
+                        reaches clients worldwide.
+                    </p>
+                    <button type="button" class="btn btn-light mb-5">More about me</button>
+
+                    <div class="accordion" id="accordionExample" data-aos="zoom-in-left" data-aos-offset="200">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    My hobbies
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>Personally, I am passionate about expanding our services globally</strong> ,
+                                    ensuring our
+                                    expertise reaches clients worldwide. My hobbies include exploring new technologies,
+                                    traveling, and
+                                    fostering creativity through various forms of art and design.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    My qualification
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>I hold a Bachelor's degree in IT</strong> from a renowned institution in
+                                    India, providing me with a solid foundation in the field. This qualification
+                                    empowers me to deliver high-quality technical services in app development, web
+                                    development, game development, and more, ensuring exceptional results for clients
+                                    globally.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    My Dreams
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong> My dream is to democratize web and technical solutions</strong>, making
+                                    them affordable and accessible to everyone. I
+                                    envision a future where innovation in app development, web development, and game
+                                    development empowers businesses and individuals worldwide, fostering creativity and
+                                    growth in the digital landscape.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end" data-aos="zoom-in-right"
+                    data-aos-offset="200">
+                    <img src="hammer-tusk-t3oVS8r7P8A-unsplash.jpg" class="img-fluid img-thumbnail" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Services py-5 bg-light" id="Services">
+        <div class="container">
+            <div class="text-center my-5" data-aos="fade-up" data-aos-offset="200">
+                <h1>Our <span class="text-primary">Services</span></h1>
+                <hr / class="W-25 m-auto">
+            </div>
+            <div class="row" data-aos="zoom-in-up" data-aos-offset="200">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <i class="fa fa-users bg-primary p-2 text-white rounded mb-2"></i>
+                            <h5 class="card-title">Web Devlopment</h5>
+                            <p class="card-text">Transform your online presence with expert web development tailored to
+                                your needs.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card bg-primary text-white">
+                        <div class="card-body">
+                            <i class="fa fa-code bg-white p-2 text-dark rounded  mb-2"></i>
+                            <h5 class="card-title">App Development</h5>
+                            <p class="card-text">Crafting innovative mobile apps to elevate your business and engage
+                                your audience.
+                            </p>
+                            <a href="#" class="btn btn-light">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa fa-users bg-primary p-2 text-white rounded mb-2"></i>
+                            <h5 class="card-title">Graphics Design</h5>
+                            <p class="card-text">Bringing creativity to life with visually captivating graphic design
+                                solutions for every project.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" data-aos="zoom-in-down" data-aos-offset="200">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card ">
+
+                        <div class="card-body">
+                            <i class="fa fa-users bg-primary p-2 text-white rounded mb-2"></i>
+                            <h5 class="card-title">IT Consulting</h5>
+                            <p class="card-text">Strategic IT consulting to optimize operations and drive business
+                                growth with expert guidance.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card bg-primary text-white">
+                        <div class="card-body">
+                            <i class="fa fa-code bg-white p-2 text-dark rounded  mb-2"></i>
+                            <h5 class="card-title">Web3</h5>
+                            <p class="card-text">Explore the future of decentralized applications and blockchain
+                                technology with our Web3 expertise.
+                            </p>
+                            <a href="#" class="btn btn-light">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fa fa-users bg-primary p-2 text-white rounded mb-2"></i>
+                            <h5 class="card-title">Software Development</h5>
+                            <p class="card-text">Custom software solutions tailored to streamline operations and enhance
+                                efficiency for your business.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team my-5 text-center" id="team">
+        <div class="container">
+            <div class="text-center my-5" data-aos="fade-up" data-aos-offset="200">
+                <h1>Our <span class="text-primary">Team</span></h1>
+                <hr / class="W-25 m-auto">
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12" data-aos="flip-left" data-aos-offset="200">
+                    <div class="card" style="width: 18rem;">
+
+                        <div class="card-body">
+                            <img src="Screenshot 2024-07-12 185307.png"
+                                class="img-fluid rounded-circle border border-primary p-2" alt="...">
+                            <h5 class="card-title mt-4 ">Saurabh</h5>
+                            <p class="card-text">Front-end Developer</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12" data-aos="flip-up" data-aos-offset="300">
+                    <div class="card" style="width: 18rem;">
+
+                        <div class="card-body">
+                            <img src="Screenshot 2024-07-12 190056.png"
+                                class="img-fluid rounded-circle border border-primary p-2" alt="...">
+                            <h5 class="card-title mt-4 ">Tejaswi Sinha</h5>
+                            <p class="card-text">Back-end Developer</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12" data-aos="flip-right" data-aos-offset="400">
+                    <div class="card" style="width: 18rem;">
+
+                        <div class="card-body">
+                            <img src="s3.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="...">
+                            <h5 class="card-title mt-4 ">Kristina</h5>
+                            <p class="card-text">Full-stack Developer</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="text-center my-5" data-aos="fade-up" data-aos-offset="200">
+                <h1>Feel free <span class="text-primary">to connect</span></h1>
+                <hr / class="W-25 m-auto">
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-up-left" data-aos-offset="200">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end p-4" data-aos="fade-up-right"
+                    data-aos-offset="200">
+                    <img src="3d-rendering-kid-playing-digital-game.jpg" class="img-fluid img-thumbnail p-2" alt="">
+                </div>
+            </div>
+    </section>
+    <div class="container-fluid bg-primary text-white p-2 text-center fs-4" data-aos="fade-left"
+        data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500"> Devloped by Saurabh </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
